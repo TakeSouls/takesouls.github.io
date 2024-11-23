@@ -2,13 +2,13 @@
 
 Hours Productive: 10
 
-- Create Basic Website
+- Create Take Souls
 
 ## Sunday, November 24th 2024
 
 Hours Productive: 
 
-- Task A
+- 
 
 ## Monday, November 25th 2024
 
