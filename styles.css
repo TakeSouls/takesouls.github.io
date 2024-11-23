@@ -108,7 +108,7 @@ ul#note-tasks {
   right: 0.5rem; /* Adjusts to place closer to the right corner */
   background: transparent;
   border: none;
-  color: black; /* Ensures the X is black */
+  color: black !important; /* Ensures the X is black */
   text-decoration: none; /* Prevents any underline or blue color on iOS */
   cursor: pointer;
   padding: 0; /* Removes any extra padding */
