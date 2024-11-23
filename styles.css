@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller minimum size */
+  gap: 2px; /* Minimal gap between squares */
+  width: 100%; /* Full page width */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Matches width to ensure perfect square */
+  text-align: center;
+  cursor: pointer;
+  color: transparent; /* Hide the date by default */
+  font-size: 13px; /* Fixed font size for readability */
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevents text overflow */
+  white-space: nowrap; /* Ensures no line breaks */
+  background-color: grey; /* Placeholder for color logic */
+}
+
+.square:hover {
+  color: white; /* Show the date on hover */
+}
+
+
+.square.green {
+  background-color: #28a745;
+}
+
+.square.red {
+  background-color: #dc3545;
+}
+
+.square.grey {
+  background-color: #6c757d; /* Grey for unused dates */
+  color: white;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2vw; /* Padding scales with viewport width */
+  border: 2px solid black; /* Restored border */
+  border-radius: 10px;
+  text-align: center;
+  width: 40vw; /* Width scales with viewport width */
+  max-width: 90vw; /* Prevent it from exceeding viewport width */
+  min-width: 300px; /* Ensures it doesn’t become too small */
+  max-height: 80vh; /* Prevent it from exceeding viewport height */
+  color: black;
+  position: relative;
+  box-sizing: border-box; /* Includes padding in dimensions */
+  overflow-y: auto; /* Enables scrolling for long content */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the modal */
+}
+
+h2#note-title {
+  font-size: 2vw; /* Slightly smaller font for the title */
+  margin: 0.3vw 0; /* Reduced spacing to bring the title closer to the note time */
+}
+
+p#note-time {
+  font-size: 1.2vw; /* Slightly smaller Time Productive text */
+  margin: 0.2vw 0; /* Minimal spacing above and below */
+}
+
+ul#note-tasks {
+  font-size: 1.2vw; /* Slightly smaller task list text */
+  text-align: left;
+  padding-left: 2vw; /* Adjust padding dynamically */
+  margin: 1vw 0; /* Leave consistent spacing below tasks */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 1vw; /* Adjust dynamically */
+  right: 1vw; /* Adjust dynamically */
+  font-size: 1.8vw; /* Slightly smaller close button */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4vw; /* Adjust padding */
+}
