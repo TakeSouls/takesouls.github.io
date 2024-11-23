@@ -10,7 +10,7 @@ function parseMarkdown(data) {
   const dailyNotes = sections.map(section => {
     const lines = section.trim().split('\n');
     const title = lines[0].trim(); // Keep the original title format
-    const timeMatch = lines.find(line => line.startsWith('Time Productive:'));
+    const timeMatch = lines.find(line => line.startsWith('Hours Productive:'));
     const timeValue = timeMatch?.split(':')[1]?.trim() || "NaN"; // Extract the value or default to NaN
     const tasks = lines.slice(1).filter(line => line.startsWith('-')).map(line => line.substring(1).trim()); // Remove "-"
     return { title, timeValue, tasks };
@@ -75,7 +75,7 @@ function showNoteModal(note, color) {
   const noteTasks = document.getElementById('note-tasks');
 
   noteTitle.innerText = note.title;
-  noteTime.innerText = `Time Productive: ${note.timeValue}`;
+  noteTime.innerText = `Hours Productive: ${note.timeValue}`;
   noteTasks.innerHTML = note.tasks.map(task => `<li>${task}</li>`).join('');
 
   const modalContent = document.querySelector('.modal-content');
