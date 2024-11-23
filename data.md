@@ -186,9 +186,9 @@ Hours Productive:
 
 ## Tuesday, December 24th 2024
 
-Hours Productive:
+Hours Productive: purple
 
--
+- Christmas Eve
 
 ## Wednesday, December 25th 2024
 
