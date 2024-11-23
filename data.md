@@ -1,6 +1,6 @@
 ## Saturday, November 23rd 2024
 
-Hours Productive: 10
+Hours Productive: 8
 
 - Create Take Souls
 
