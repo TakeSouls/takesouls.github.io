@@ -6,30 +6,15 @@ Hours Productive: 10
 
 ## Sunday, November 24th 2024
 
-Hours Productive: 8
+Hours Productive: 
 
 - Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
-- Task A
-- Task B
 
 ## Monday, November 25th 2024
 
-Hours Productive: 10.4
+Hours Productive: 
 
-- Hello World!
+- 
 
 ## Tuesday, November 26th 2024
 
