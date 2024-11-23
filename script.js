@@ -75,7 +75,14 @@ function showNoteModal(note, color) {
   const noteTasks = document.getElementById('note-tasks');
 
   noteTitle.innerText = note.title;
-  noteTime.innerText = `Hours Productive: ${note.timeValue}`;
+  // We only show note.timeValue if it is NaN or a number. not "purple"
+  const hours = parseFloat(note.timeValue);
+  if (!isNaN(hours)) {
+    noteTime.innerText = `Hours Productive: ${hours}`;
+  } else {
+    noteTime.innerText = ''; // Clear it if it's not a valid number
+  }
+
   noteTasks.innerHTML = note.tasks.map(task => `<li>${task}</li>`).join('');
 
   const modalContent = document.querySelector('.modal-content');
