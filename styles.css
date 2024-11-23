@@ -102,12 +102,16 @@ ul#note-tasks {
 }
 
 .close {
-  font-size: clamp(1.5rem, 2vw, 2rem); /* Minimum 1rem, scales up to 1.5rem */
+  font-size: clamp(1.5rem, 3vw, 2rem);
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.5rem; /* Adjusts to place closer to the top */
+  right: 0.5rem; /* Adjusts to place closer to the right corner */
   background: transparent;
   border: none;
+  color: black; /* Ensures the X is black */
+  text-decoration: none; /* Prevents any underline or blue color on iOS */
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0; /* Removes any extra padding */
+  appearance: none; /* Ensures consistent look across browsers */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
 }
