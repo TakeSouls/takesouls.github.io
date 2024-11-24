@@ -105,12 +105,13 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-window.addEventListener('scroll', () => {
+// Save the scroll position to localStorage
+window.addEventListener('beforeunload', () => {
   localStorage.setItem('scrollPosition', window.scrollY);
 });
 
-// Restore scroll position on page load
-window.addEventListener('load', () => {
+// Restore the scroll position on page load
+window.addEventListener('DOMContentLoaded', () => {
   const scrollPosition = localStorage.getItem('scrollPosition');
   if (scrollPosition !== null) {
     window.scrollTo(0, parseInt(scrollPosition, 10));
