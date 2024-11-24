@@ -7,16 +7,6 @@ body {
   color: white;
 }
 
-/* Keyframes for the fade-in effect */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller minimum size */
