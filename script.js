@@ -104,3 +104,15 @@ document.addEventListener('keydown', (e) => {
     modal.style.display = 'none';
   }
 });
+
+window.addEventListener('scroll', () => {
+  localStorage.setItem('scrollPosition', window.scrollY);
+});
+
+// Restore scroll position on page load
+window.addEventListener('load', () => {
+  const scrollPosition = localStorage.getItem('scrollPosition');
+  if (scrollPosition !== null) {
+    window.scrollTo(0, parseInt(scrollPosition, 10));
+  }
+});

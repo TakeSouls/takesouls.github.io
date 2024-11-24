@@ -1,9 +1,10 @@
 ## Saturday, November 23rd 2024
 
-Hours Productive: green
+Hours Productive: 4
 
 - Create Take Souls
-- Swift UI Tutorial
+
+I have to find out where python seed is.
 
 ## Sunday, November 24th 2024
 
