@@ -1,8 +1,9 @@
 ## Saturday, November 23rd 2024
 
-Hours Productive: 8
+Hours Productive: green
 
 - Create Take Souls
+- Swift UI Tutorial
 
 ## Sunday, November 24th 2024
 
